@@ -1,0 +1,181 @@
+:root{
+    --blue: rgb(051 0129 248);
+    --l_blue: rgb(191 236 230);
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #b3b3b3; 
+}
+
+
+/* Services */
+.services_head {
+    font-size: 1rem;
+    background-image: url('/docapp/stf/img/service2.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:color;
+    background-color: var(--t_black);
+    text-align: center;
+    color: var(--white);
+    margin: 1rem auto; margin-top: 0;
+    padding: 2rem;
+    width: 100%;
+    height: fit-content;
+    
+}.services_head p {font-size: 2rem; font-weight: bolder; margin: 0.5rem auto;}
+.services_head p:nth-child(2) {font-size: 0.85rem; margin-bottom: 1rem; font-weight: normal;}
+
+
+/* Services body section */
+.services_body {
+    position: relative;
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+}.services_body div {
+    clear: both;
+    text-align:left;
+    height: fit-content;
+    min-height: 8rem;
+    width: 90%;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    height: fit-content;
+    padding-bottom: 2.4rem;
+}.services_body div:hover {box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2); background-color: var(--cream);}
+.services_body div img {
+    display: inline-block;
+    width: 3rem;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+.services_body div p:nth-child(2) {
+    font-size: 1.3rem; 
+    color: var(--black);
+    font-weight: bolder; 
+    display: inline-block;
+    padding: 0.3rem 1rem;
+}
+.services_body div p {
+    clear: both;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+
+
+.services_body a p {
+    padding: 0.2rem 0.5rem; 
+    background-color: var(--orange); 
+    margin: 0;
+    display: inline;
+    border-radius: 1rem;
+    font-weight: normal;
+}.services_body div a { 
+    position: relative;
+    display:none;
+    margin-bottom: 0.5rem; margin-right: 0.5rem; margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--white);
+    float: right;
+}
+
+
+/* @ 410 */
+@media (min-width: 410px){
+    
+}
+
+/* @ 768 */
+@media (min-width: 768px){
+    .services_body {
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 1rem auto;
+        width: 100%;
+    }.services_body div {
+        clear: both;
+        text-align:left;
+        height: 20rem;
+        min-height: 8rem;
+        width: 90%;
+        box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+        margin: 2rem auto;
+        padding-bottom: 2.4rem;
+    }.services_body div:hover {box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2); background-color: var(--cream);}
+    .services_body div img {
+        display: inline-block;
+        width: 3rem;
+        height: auto;
+        vertical-align: middle;
+        margin-left: 1rem;
+    }
+    .services_body div p:nth-child(2) {
+        font-size: 1.3rem; 
+        color: var(--black);
+        font-weight: bolder; 
+        display: inline-block;
+        padding: 0.3rem 1rem;
+    }
+    .services_body div p {
+        clear: both;
+        margin: 0.5rem 0;
+        padding: 0 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* FOR PC */
+/* @ 990px */
+@media (min-width: 990px){
+    .services_body {
+        position: relative;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 1rem auto;
+        width: 100%;
+    }.services_body div {
+        clear: both;
+        text-align:left;
+        height: 20rem;
+        min-height: 8rem;
+        width: 90%;
+        box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+        margin: 2rem auto;
+        padding-bottom: 2.4rem;
+    }.services_body div:hover {box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2); background-color: var(--cream);}
+    .services_body div img {
+        display: inline-block;
+        width: 3rem;
+        height: auto;
+        vertical-align: middle;
+        margin-left: 1rem;
+    }
+    .services_body div p:nth-child(2) {
+        font-size: 1.3rem; 
+        color: var(--black);
+        font-weight: bolder; 
+        display: inline-block;
+        padding: 0.3rem 1rem;
+    }
+    .services_body div p {
+        clear: both;
+        margin: 0.5rem 0;
+        padding: 0 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* @ 1200 */
+@media (min-width: 1200px){
+    
+}
+
+/* @ 1400 */
+@media (min-width: 1400px){
+    
+}

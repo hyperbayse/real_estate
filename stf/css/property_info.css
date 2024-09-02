@@ -1,0 +1,416 @@
+
+#property_info {margin: 0; width: 100%;}
+#property_info .property {
+    clear: both;
+    background-color: var(--white);
+    margin: 0.5rem auto;
+    padding: 0.2rem 0.4rem; padding-bottom: 1.5rem;
+    height: fit-content;
+    min-height: 15rem;
+    font-size: 0.9rem;
+    width: 93%;
+    min-width: 10rem;
+    position: relative;
+}.property * {margin: 0.1rem;}
+
+.property p:first-child {font-weight: 500;}
+.p_image {
+    width: 100%; height: auto; min-height: 15rem;
+    margin: 0;
+}.current {
+    display: flex;
+    align-items: center;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0.4rem 0;
+    background-color: var(--black);
+    overflow: scroll;
+}
+.current img {width: 100%; margin: 0 0.3rem;}
+
+.c_prev, .c_next {
+    height: 10rem;
+    width: auto;
+    opacity: 0.5;
+}
+.active {
+    width: auto;
+    height: 15rem;
+}
+
+/* New Listing change icon */
+.change_listings {display: block;}
+.change_listings span {
+    position: absolute;
+    width: 1.5rem;
+    height: auto;
+    top: 5.5rem;
+    margin: 0; padding: 0.2rem;
+    background-color: var(--t_black);
+    border-radius: 0.5rem;
+    z-index: 2;
+}
+.change_listings .right {
+    right: 0; margin: 0;
+}.change_listings .left {
+    left: 0; margin: 0;
+}
+
+.p_images {
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    margin: 0; padding: 0.3rem; margin-bottom: 0.8rem;
+    background-color: var(--t_black);
+    width: 100%; height: fit-content;
+}.p_images img {
+    width: 4rem; height: auto;
+    margin: 0 0.2rem;
+}
+.property .descr {
+    font-weight: bolder;
+    font-size: 0.9rem;
+}.property .tag {
+    margin-top: 0.3rem; margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: var(--blue);
+    list-style-type:square;
+}.property .price {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 0.5rem auto;
+}
+.property input[type='button'] {
+    background-color: var(--blue);
+    border-radius: 0.4rem;
+    float: right;
+    padding: 0.25rem;
+    color:var(--white);
+    font-size: 1rem;
+    border-style: none; margin-top: -0.5rem;
+}.property input:hover {
+    background-color: var(--t_black);
+    cursor: pointer;
+}
+.info {
+    display: block;
+    margin: 0.8rem 0; padding: 0 1rem;
+    width: 100%; height:fit-content;
+}.info div {
+    margin: 0.5rem 0;
+    width: fit-content; min-width:4rem; height: auto;
+    background-color: var(--white);
+}.info div img {
+    width: auto; height: 1rem;
+    margin: 0; margin-right: 0.5rem;
+}.info div p {
+    display: inline-block;
+    color: var(--black);
+    margin: 0; margin-top: 0.2rem;
+    font-size: 0.9rem;
+}
+.other_info {
+    clear: both;
+    display: block; padding: 0 1rem;
+    margin: 0; margin-top: 1rem;
+    width: 100%; min-width: 15rem;
+    height: fit-content;
+}.other_info textarea {
+    margin: 0 0 1rem 0; padding: 0.3rem;
+    width: 100%; max-width: 100%;   
+}
+
+#related {
+    clear: both;
+    background-color: var(--white);
+    margin: 0.5rem auto; margin-top: 1.5rem;
+    padding: 0.2rem 1rem; padding-bottom: 1.5rem;
+    height: fit-content;
+    min-height: 15rem;
+    font-size: 0.9rem;
+    width: 93%;
+    min-width: 10rem;
+    position: relative;
+}
+#related .related {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    gap: 0.5rem 1rem;
+}
+#related p:first-child {
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+    color: var(--blue);
+}
+.related img {
+    width: 100%; 
+    height: 6rem;
+    background-color: rgba(139, 247, 232, 0.288);
+}
+
+/* @410 */
+@media screen and (min-width: 410px) {
+    
+}
+
+/* @ 768 */
+@media screen and (min-width: 768px) {
+    #property_info .property {
+        clear: both;
+        background-color: var(--white);
+        margin: 0.5rem auto;
+        padding: 0.2rem 0.4rem; padding-bottom: 1.5rem;
+        height: fit-content;
+        min-height: 15rem;
+        font-size: 0.9rem;
+        width: 93%;
+        min-width: 10rem;
+        position: relative;
+    }.property * {margin: 0.1rem;}
+    
+    .property p:first-child {font-weight: 500;}
+    .p_image {
+        width: 100%; height: auto; min-height: 15rem;
+        margin: 0;
+    }.current {
+        display: flex;
+        align-items: center;
+        width: 100%; height: 100%;
+        margin: 0; padding: 0.4rem 0;
+        background-color: var(--black);
+        overflow: scroll;
+    }
+    .current img {width: 100%; margin: 0 0.3rem;}
+    
+    .c_prev, .c_next {
+        height: 15rem;
+        width: auto;
+        opacity: 0.5;
+    }
+    .active {
+        width: auto;
+        height: 20rem;
+    }
+    
+    /* New Listing change icon */
+    .change_listings {display: block;}
+    .change_listings span {
+        position: absolute;
+        width: 1.5rem;
+        height: auto;
+        top: 8rem;
+        margin: 0; padding: 0.2rem;
+        background-color: var(--t_black);
+        border-radius: 0.5rem;
+        z-index: 2;
+    }
+    .change_listings .right {
+        right: 0; margin: 0;
+    }.change_listings .left {
+        left: 0; margin: 0;
+    }
+    
+    .p_images {
+        display: flex;
+        justify-content: center;
+        overflow: scroll;
+        margin: 0; padding: 0.3rem; margin-bottom: 0.8rem;
+        background-color: var(--t_black);
+        width: 100%; height: fit-content;
+    }.p_images img {
+        width: 5.5rem; height: auto;
+        margin: 0 0.2rem;
+    }
+
+    /* other related properties */
+    #related .related {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 33% 33% 33%;
+        gap: 0.5rem 1rem;
+    }
+    #related p:first-child {
+        margin: 0.3rem 0;
+        font-size: 1.1rem;
+        color: var(--blue);
+    }
+    .related img {
+        width: 100%; 
+        height: 6rem;
+        background-color: rgba(139, 247, 232, 0.288);
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #property_info .property {
+        clear: both;
+        background-color: var(--white);
+        margin: 0.5rem auto;
+        padding: 0.2rem 0.4rem; padding-bottom: 1.5rem;
+        height: fit-content;
+        min-height: 15rem;
+        font-size: 0.9rem;
+        width: 93%;
+        min-width: 10rem;
+        position: relative;
+    }.property * {margin: 0.1rem;}
+    
+    .property p:first-child {font-weight: 500;}
+    .p_image {
+        width: 100%; height: auto; min-height: 15rem;
+        margin: 0;
+    }.current {
+        display: flex;
+        align-items: center;
+        width: 100%; height: 100%;
+        margin: 0; padding: 0.4rem 0;
+        background-color: var(--black);
+        overflow: scroll;
+    }
+    .current img {width: 100%; margin: 0 0.3rem;}
+    
+    .c_prev, .c_next {
+        height: 20rem;
+        width: auto;
+        opacity: 0.5;
+    }
+    .active {
+        width: auto;
+        height: 30rem;
+    }
+    
+    /* New Listing change icon */
+    .change_listings {display: block;}
+    .change_listings span {
+        position: absolute;
+        width: 1.9rem;
+        height: auto;
+        top: 12rem;
+        margin: 0; padding: 0.2rem;
+        background-color: var(--t_black);
+        border-radius: 0.5rem;
+        z-index: 2;
+    }
+    .change_listings .right {
+        right: 0; margin: 0;
+    }.change_listings .left {
+        left: 0; margin: 0;
+    }
+    
+    .p_images {
+        display: flex;
+        justify-content: center;
+        overflow: scroll;
+        margin: 0; padding: 0.3rem; margin-bottom: 0.8rem;
+        background-color: var(--t_black);
+        width: 100%; height: fit-content;
+    }.p_images img {
+        width: 6rem; height: auto;
+        margin: 0 0.2rem;
+    }
+
+    /* other related properties */
+    #related .related {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 0.5rem 1rem;
+    }
+    #related p:first-child {
+        margin: 0.3rem 0;
+        font-size: 1.1rem;
+        color: var(--blue);
+    }
+    .related img {
+        width: 100%; 
+        height: 6rem;
+        background-color: rgba(139, 247, 232, 0.288);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #property_info .property {
+        clear: both;
+        background-color: var(--white);
+        margin: 0.5rem auto;
+        padding: 0.2rem 0.4rem; padding-bottom: 1.5rem;
+        height: fit-content;
+        min-height: 15rem;
+        font-size: 0.9rem;
+        width: 93%;
+        min-width: 10rem;
+        position: relative;
+    }.property * {margin: 0.1rem;}
+    
+    .property p:first-child {font-weight: 500;}
+    .p_image {
+        width: 100%; height: auto; min-height: 15rem;
+        margin: 0;
+    }.current {
+        display: flex;
+        align-items: center;
+        width: 100%; height: 100%;
+        margin: 0; padding: 0.4rem 0;
+        background-color: var(--black);
+        overflow: scroll;
+    }
+    .current img {width: 100%; margin: 0 0.3rem;}
+    
+    .c_prev, .c_next {
+        height: 27rem;
+        width: auto;
+        opacity: 0.5;
+    }
+    .active {
+        width: auto;
+        height: 30rem;
+    }
+    
+    /* New Listing change icon */
+    .change_listings {display: block;}
+    .change_listings span {
+        position: absolute;
+        width: 2.2rem;
+        height: auto;
+        top: 12rem;
+        margin: 0; padding: 0.2rem;
+        background-color: var(--t_black);
+        border-radius: 0.5rem;
+        z-index: 2;
+    }
+    .change_listings .right {
+        right: 0; margin: 0;
+    }.change_listings .left {
+        left: 0; margin: 0;
+    }
+    
+    .p_images {
+        display: flex;
+        justify-content: center;
+        overflow: scroll;
+        margin: 0; padding: 0.3rem; margin-bottom: 0.8rem;
+        background-color: var(--t_black);
+        width: 100%; height: fit-content;
+    }.p_images img {
+        width: 6rem; height: auto;
+        margin: 0 0.2rem;
+    }
+    
+    /* other related properties */
+    #related .related {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 0.5rem 1rem;
+    }
+    #related p:first-child {
+        margin: 0.3rem 0;
+        font-size: 1.1rem;
+        color: var(--blue);
+    }
+    .related img {
+        width: 100%; 
+        height: 6rem;
+        background-color: rgba(139, 247, 232, 0.288);
+    }
+}

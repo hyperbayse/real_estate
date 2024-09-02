@@ -1,0 +1,583 @@
+:root{
+    --blue: rgb(051 0129 248);
+    --l_blue: rgb(191 236 230);
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #b3b3b3; 
+}
+
+
+/* Contact */
+.contacts {
+    justify-content: center;
+    margin: 0.5rem auto; margin-top: 0;
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--t_black);
+    background-image: url('/docapp/stf/img/mission.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+}.contacts > h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: var(--white);
+    margin: 0 auto;
+    padding:0.8rem; padding-top: 1.5rem; 
+}
+.contacts .contact {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 0 0.2rem 0;
+}.appointment >p, .message >p {margin: 0; font-size: 1.2rem; padding: 0.4rem 0.8rem}
+.contacts .appointment, .contacts .message{
+    background-color: var(--blue);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    width: 100%;
+}.appointment:hover, .message:hover {cursor: pointer; background-color: var(--t_black);}
+
+
+/* Contact Form */
+.contact_box {
+    width: 100%;
+    padding: 1rem 0;
+}
+.appointment_box, .message_box{
+    width: 95%;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem auto;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.appointment_box p:first-of-type, .message_box p:first-of-type {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin: 0.7rem auto 1rem auto;
+}
+.appointment_box div, .message_box div {
+    display: block;
+    width: 100%;
+    margin: 0.5rem auto;
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.appointment_box input:not(input[type='submit']), .appointment_box select, .message_box input:not(input[type='submit']), .message_box select {
+    width: 100%;
+    height: 2.8rem;
+    background-color: var(--white);
+    color: var(--blue);
+    margin: 0.5rem auto;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 0.05rem;
+    border-radius: 0.1rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+}
+
+.message_box .subject, .message_box .messages {
+    width: 100%;
+    margin: 0.3rem auto;
+    color: var(--blue);
+    font-size: 1rem;
+} textarea {
+    width: 100%;
+    margin: 0.2rem auto;
+    padding: 0.4rem;
+    color: var(--blue);
+    font-size: 0.9rem;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 0.05rem;
+}
+
+/* Submit button */
+.submit_btn{text-align: center;}
+input[type="submit"] {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 0.5rem auto;
+    border-style: none;
+    border-radius: 0.2rem;
+    padding: 0.7rem 0.5rem;
+}
+
+/* Other Contacts */
+.other_contacts {
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    display: block;
+    margin: 2rem auto;
+    padding: 2rem 2rem;
+    color: var(--black);
+}
+.other_contacts h5 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: var(--blue);
+}
+.other_contacts p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+}
+.other_contacts img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.2rem;
+    background-color: var(--t_black);
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-right: 0.2rem;
+}.other_contacts a {color: var(--black);}
+
+
+/* @ 410 */
+@media (min-width: 410px){
+    
+}
+
+/* @ 768 */
+@media (min-width: 768px){
+    .contacts .contact {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 0;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 0 0.2rem 0;
+    }.appointment >p, .message >p {margin: 0;}
+    .contacts .appointment, .contacts .message{
+        background-color: var(--blue);
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--white);
+        text-align: center;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+        width: 90%;
+    }.appointment:hover, .message:hover {cursor: pointer; background-color: var(--t_black);}
+
+    .contacts h4 {font-size: 2.5rem;}
+    /* Contact Form */
+    .contact_box {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .appointment_box, .message_box{
+        width: 80%;
+        height: fit-content;
+        padding: 1rem;
+        margin: 1rem auto;
+        box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+        display: none; /*change back to none later */
+    }
+    .contact_box form {
+        display: block;
+        gap: 1rem 2rem;
+    }
+    .appointment_box p:first-of-type, .message_box p:first-of-type {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight:bold;
+        text-transform: uppercase;
+        margin: 0.7rem auto 1rem auto;
+    }
+    .appointment_box div, .message_box div {
+        display: block;
+        width: 100%;
+        margin: 0.5rem auto;
+        color: var(--blue);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .appointment_box input:not(input[type='submit']), .appointment_box select, .message_box input:not(input[type='submit']), .message_box select {
+        width: 100%;
+        height: 2.8rem;
+        background-color: var(--white);
+        color: var(--blue);
+        margin: 0.5rem auto;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-width: 0.1rem;
+        border-radius: 0.1rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .message_box .subject, .message_box .messages {
+        grid-column: 1 / span 2;
+        width: 100%;
+        margin: 0.3rem auto;
+        color: var(--blue);
+        font-size: 1rem;
+    } textarea {
+        width: 100%;
+        margin: 0.2rem auto;
+        padding: 0.4rem;
+        color: var(--blue);
+        font-size: 0.9rem;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-width: 0.1rem;
+    }
+    
+    /* Submit button */
+    .submit_btn{
+        text-align: center;
+        grid-column: 1 / span 2;
+    }
+    input[type="submit"] {
+        font-size: 1.2rem;
+        text-align: center;
+        height: auto;
+        background-color: var(--blue);
+        color: var(--white);
+        margin: 0.5rem auto;
+        border-style: none;
+        border-radius: 0.2rem;
+        padding: 0.7rem 0.5rem;
+    }
+    
+    /* Other Contacts */
+    .other_contacts {
+        width: 85%;
+        height: fit-content;
+        text-align: left;
+        display: block;
+        margin: 2rem auto;
+        padding: 2rem 2rem;
+        color: var(--black);
+    }
+    .other_contacts h5 {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        color: var(--blue);
+    }
+    .other_contacts p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:500;
+        font-size: 1.1rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 0.2rem;
+        border-radius: 0.2rem;
+    }
+    .other_contacts img {
+        width: 2rem;
+        height: 1.5rem;
+        padding: 0.2rem;
+        background-color: var(--t_black);
+        border-radius: 0.5rem;
+        vertical-align: middle;
+        margin: 0 auto;
+        margin-right: 0.7rem;
+    }
+}
+
+
+
+/* FOR PC */
+/* @ 990px */
+@media (min-width: 990px){
+    .contacts .contact {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 0;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 0 0.2rem 0;
+    }.appointment >p, .message >p {margin: 0;}
+    .contacts .appointment, .contacts .message{
+        background-color: var(--blue);
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--white);
+        text-align: center;
+        margin: 0.5rem auto;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        width: 80%;
+    }.appointment:hover, .message:hover {cursor: pointer; background-color: var(--t_black);}
+
+    .contacts h4 {font-size: 2.5rem;}
+    /* Contact Form */
+    .contact_box {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .appointment_box, .message_box{
+        width: 80%;
+        height: fit-content;
+        padding: 1rem;
+        margin: 1rem auto;
+        box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+        display: none; /*change back to none later */
+    }
+    .contact_box form {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 1rem 2rem;
+    }
+    .appointment_box p:first-of-type, .message_box p:first-of-type {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight:bold;
+        text-transform: uppercase;
+        margin: 0.7rem auto 1rem auto;
+    }
+    .appointment_box div, .message_box div {
+        display: block;
+        width: 100%;
+        margin: 0.5rem auto;
+        color: var(--blue);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .appointment_box input:not(input[type='submit']), .appointment_box select, .message_box input:not(input[type='submit']), .message_box select {
+        width: 100%;
+        height: 2.8rem;
+        background-color: var(--white);
+        color: var(--blue);
+        margin: 0.5rem auto;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-width: 0.1rem;
+        border-radius: 0.1rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .message_box .subject, .message_box .messages {
+        grid-column: 1 / span 2;
+        width: 100%;
+        margin: 0.3rem auto;
+        color: var(--blue);
+        font-size: 1rem;
+    } textarea {
+        width: 100%;
+        margin: 0.2rem auto;
+        padding: 0.4rem;
+        color: var(--blue);
+        font-size: 0.9rem;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-width: 0.1rem;
+    }
+    
+    /* Submit button */
+    .submit_btn{
+        text-align: center;
+        grid-column: 1 / span 2;
+    }
+    input[type="submit"] {
+        font-size: 1.2rem;
+        text-align: center;
+        height: auto;
+        background-color: var(--blue);
+        color: var(--white);
+        margin: 0.5rem auto;
+        border-style: none;
+        border-radius: 0.2rem;
+        padding: 0.7rem 0.5rem;
+    }
+    
+    /* Other Contacts */
+    .other_contacts {
+        width: 85%;
+        height: fit-content;
+        text-align: left;
+        display: block;
+        margin: 2rem auto;
+        padding: 2rem 2rem;
+        color: var(--black);
+    }
+    .other_contacts h5 {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        color: var(--blue);
+    }
+    .other_contacts p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:500;
+        font-size: 1.1rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 0.2rem;
+        border-radius: 0.2rem;
+    }
+    .other_contacts img {
+        width: 2rem;
+        height: 1.5rem;
+        padding: 0.2rem;
+        background-color: var(--t_black);
+        border-radius: 0.5rem;
+        vertical-align: middle;
+        margin: 0 auto;
+        margin-right: 0.7rem;
+    }
+}
+
+/* @ 1200 */
+@media (min-width: 1200px){
+    .contacts .contact {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 0;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 0 0.2rem 0;
+    }.appointment >p, .message >p {margin: 0;}
+    .contacts .appointment, .contacts .message{
+        background-color: var(--blue);
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--white);
+        text-align: center;
+        margin: 0.5rem auto;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        width: 80%;
+    }.appointment:hover, .message:hover {cursor: pointer; background-color: var(--t_black);}
+
+    .contacts h4 {font-size: 2.5rem;}
+    /* Contact Form */
+    .contact_box {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .appointment_box, .message_box{
+        width: 80%;
+        height: fit-content;
+        padding: 1rem;
+        margin: 1rem auto;
+        box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+        display: none; /*change back to none later */
+    }
+    .contact_box form {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 1rem 2rem;
+    }
+    .appointment_box p:first-of-type, .message_box p:first-of-type {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight:bold;
+        text-transform: uppercase;
+        margin: 0.7rem auto 1rem auto;
+    }
+    .appointment_box div, .message_box div {
+        display: block;
+        width: 100%;
+        margin: 0.5rem auto;
+        color: var(--blue);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .appointment_box input:not(input[type='submit']), .appointment_box select, .message_box input:not(input[type='submit']), .message_box select {
+        width: 100%;
+        height: 2.8rem;
+        background-color: var(--white);
+        color: var(--blue);
+        margin: 0.5rem auto;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-width: 0.1rem;
+        border-radius: 0.1rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .message_box .subject, .message_box .messages {
+        grid-column: 1 / span 2;
+        width: 100%;
+        margin: 0.3rem auto;
+        color: var(--blue);
+        font-size: 1rem;
+    } textarea {
+        width: 100%;
+        margin: 0.2rem auto;
+        padding: 0.4rem;
+        color: var(--blue);
+        font-size: 0.9rem;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-width: 0.1rem;
+    }
+    
+    /* Submit button */
+    .submit_btn{
+        text-align: center;
+        grid-column: 1 / span 2;
+    }
+    input[type="submit"] {
+        font-size: 1.2rem;
+        text-align: center;
+        height: auto;
+        background-color: var(--blue);
+        color: var(--white);
+        margin: 0.5rem auto;
+        border-style: none;
+        border-radius: 0.2rem;
+        padding: 0.7rem 0.5rem;
+    }
+    
+    /* Other Contacts */
+    .other_contacts {
+        width: 85%;
+        height: fit-content;
+        text-align: left;
+        display: block;
+        margin: 2rem auto;
+        padding: 2rem 2rem;
+        color: var(--black);
+    }
+    .other_contacts h5 {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        color: var(--blue);
+    }
+    .other_contacts p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:500;
+        font-size: 1.1rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 0.2rem;
+        border-radius: 0.2rem;
+    }
+    .other_contacts img {
+        width: 2rem;
+        height: 1.5rem;
+        padding: 0.2rem;
+        background-color: var(--t_black);
+        border-radius: 0.5rem;
+        vertical-align: middle;
+        margin: 0 auto;
+        margin-right: 0.7rem;
+    }
+}
+
+/* @ 1400 */
+@media (min-width: 1400px){
+    
+}

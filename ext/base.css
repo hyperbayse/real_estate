@@ -1,0 +1,270 @@
+/* Footer */
+footer {
+    width: 100%;
+    clear: both;
+    font-size: 0.8rem;
+    margin: 1.5rem 0 0 0;
+    padding-top: 1rem;
+    background-color: var(--d_grey);
+    color: var(--black);
+}footer a{color: var(--white);}
+
+footer #base_links {
+    width: 100%;
+    display: grid;
+    margin: 0;
+    padding: 0.5rem 0.5rem 0.2rem 0.7rem;
+}#base_links .doc_logo img {
+    width: 5rem; 
+    height: auto;
+    background-color: var(--white);
+    padding: 0.3rem; padding-bottom: 0.3rem;
+    border-radius: 0.2rem;
+    margin: 0;
+}
+#base_links div {
+    float: left; 
+    margin-left: 0.6rem; 
+    padding-bottom: 0; 
+    margin-bottom: 0.7rem;
+    margin-top: 0.1rem;
+}footer  .doc_logo {margin-bottom: 0.4rem;} 
+footer h4 {margin: 0 0 0.2rem 0; font-size: 1rem; color: var(--blue);}
+
+footer .links a, .b_properties a, .b_services a {display: block; padding: 0.1rem 0;}
+footer .contact {
+    color: var(--white); 
+    font-size: 0.8rem;
+}
+footer .contact p {
+    margin: 0.4rem 0;
+}
+.contact .telephone {font-size: 1.1rem; font-weight: bolder;}
+.contact span {
+    position: relative; 
+    height: 0.7rem;
+    width: 1rem;
+    display: inline-block;
+    justify-content: center;
+}
+.contact img {
+    width: 1rem;
+    height: 1.3rem;
+    position: absolute;
+    top: 0; bottom: 0;
+    margin: auto 0;
+}
+
+footer #copy {
+    clear: both;
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0 1rem;
+}
+footer #copy p {padding: 0.8rem;padding-bottom: 0.5rem; margin: 0;}
+#copy .social_icon img {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    margin: auto;
+    margin-bottom: 0.7rem;
+}
+
+
+/* @ 410 */
+@media (min-width: 410px){
+    
+}
+
+/* @ 768 */
+@media (min-width: 768px){
+    footer #base_links {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 0.5rem 0.5rem 0.2rem 0;
+    }#base_links .doc_logo img {
+        width: 5rem; 
+        height: auto;
+        background-color: var(--white);
+        padding: 0.3rem; padding-bottom: 0.3rem;
+        border-radius: 0.2rem;
+        margin: 0.2rem;
+        
+    }
+    #base_links div { 
+        margin-left: 1rem;  margin-right: 1rem;
+        padding-bottom: 0; 
+        margin-bottom: 0.7rem;
+        margin-top: 1.1rem;
+    }footer  .doc_logo {margin-bottom: 0.4rem;} 
+    footer h4 {margin: 0 0 0.2rem 0; font-size: 1rem; color: var(--blue);}
+    
+    #base_links .contact {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        color: var(--white); 
+        font-size: 0.9rem;
+        float: left;
+    }
+
+
+    footer .links a, .b_properties a, .b_services a {display: block; padding: 0.1rem 0;}
+   
+    footer .contact p {
+        margin: 0.4rem 0;
+    }
+    .contact .telephone {font-size: 1.1rem; font-weight: bolder;}
+    .contact span {
+        position: relative; 
+        height: 0.7rem;
+        width: 1rem;
+        display: inline-block;
+        justify-content: center;
+    }
+    .contact img {
+        width: 1rem;
+        height: 1.3rem;
+        position: relative;
+        margin: auto ;
+        vertical-align: middle;
+    }
+
+    footer #copy {
+        clear: both;
+        text-align: left;
+        background-color: var(--blue);
+        color: var(--white);
+        height: fit-content;
+        width: 100%;
+        position: relative;
+    }
+    footer #copy p {
+        padding: 1.2rem;
+        margin: 0; 
+        display: inline-block; 
+       }
+    .social_icon {
+        clear: both;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        margin-top: 0.6rem;
+        margin-right: 1rem;
+        float: right;
+    }
+    #copy .social_icon img {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.7rem;
+        padding: 0.2rem;
+        margin: 0;
+        border-radius: 0.5rem;
+        vertical-align: middle;
+    }
+}
+
+
+
+/* FOR PC */
+/* @ 990px */
+@media (min-width: 990px){
+    footer #base_links {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 0.5rem 0.5rem 0.2rem 0;
+    }#base_links .doc_logo img {
+        width: 5rem; 
+        height: auto;
+        background-color: var(--white);
+        padding: 0.3rem; padding-bottom: 0.3rem;
+        border-radius: 0.2rem;
+        margin: 0.2rem;
+        
+    }
+    #base_links div { 
+        margin-left: 1.2rem; 
+        padding-bottom: 0; 
+        margin-bottom: 0.7rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }footer  .doc_logo {margin-bottom: 0.4rem;} 
+    footer h4 {margin: 0 0 0.2rem 0; font-size: 1rem; color: var(--blue);}
+    
+    #base_links .contact {
+        margin-right: 2rem;
+        color: var(--white); 
+        font-size: 0.9rem;
+        float: right;
+    }
+
+
+    footer .links a, .b_properties a, .b_services a {display: block; padding: 0.1rem 0;}
+   
+    footer .contact p {
+        margin: 0.4rem 0;
+    }
+    .contact .telephone {font-size: 1.1rem; font-weight: bolder;}
+    .contact span {
+        position: relative; 
+        height: 0.7rem;
+        width: 1rem;
+        display: inline-block;
+        justify-content: center;
+    }
+    .contact img {
+        width: 1rem;
+        height: 1.3rem;
+        position: relative;
+        margin: auto ;
+        vertical-align: middle;
+    }
+
+    footer #copy {
+        clear: both;
+        text-align: left;
+        background-color: var(--blue);
+        color: var(--white);
+        height: fit-content;
+        width: 100%;
+        position: relative;
+    }
+    footer #copy p {
+        padding: 1.2rem;
+        margin: 0; 
+        display: inline-block; 
+       }
+    .social_icon {
+        clear: both;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        margin-top: 0.6rem;
+        margin-right: 1rem;
+        float: right;
+    }
+    #copy .social_icon img {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.7rem;
+        padding: 0.2rem;
+        margin: 0;
+        border-radius: 0.5rem;
+        vertical-align: middle;
+    }
+}
+
+/* @ 1200 */
+@media (min-width: 1200px){
+    
+}
+
+/* @ 1400 */
+@media (min-width: 1400px){
+    
+}

@@ -1,0 +1,163 @@
+:root{
+    --blue: rgb(38, 125, 255);
+    --l_blue: rgba(211, 235, 255, 0.781);
+    --t_blue: rgba(206, 233, 255, 0.3);
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #b1b1b1; 
+    --t_black: rgba(0, 0, 0, 0.664);
+    --orange: rgb(255, 153, 0);
+}
+
+
+/* search bar */
+.property_search {
+    clear: both;
+    position: relative;
+    display: block;
+    height:2.3rem;
+    width: 100%;
+    margin: 0;
+    background-color: var(--white);
+    border-radius: 0.8rem;
+}
+.property_search input {
+    font-size: 0.9rem;
+    position: absolute;
+    padding: 0.5rem 0.8rem;
+    height:100%;
+    width: 90%;
+    background-color: var(--transparent);
+    border-radius:  1rem;
+    margin: 0;
+    color: var(--black);
+    border-style:none;
+    z-index: 2;
+}
+.property_search .search_icon {
+    position: absolute;
+    height: 90%;
+    width: auto;
+    background-color: var(--black);
+    border-radius: 0.9rem;
+    margin: auto 0;
+    padding: 0.4rem;
+    right: 0.15rem;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.sr_instance {
+    z-index: 1;
+    position: absolute;
+    top: 2.45rem;
+    background-color: var(--white);
+    width: 100%;
+    height: fit-content;
+    min-height: 20rem;
+    display: none;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+    border-radius: 0.5rem;
+}
+
+
+/* filter box */
+#filter {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    position: relative;
+    float: right;
+    border-radius: 0.3rem;
+    display: block;
+    background-color: var(--white);
+}#filter .filter_icon, #filter .cancelIcon {
+    height: 1.5rem;
+    width: auto;
+    padding: 0.2rem;
+    margin: 0;
+    position: absolute;
+    right: 0.1rem; top: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    z-index: 3;
+}#filter .filter_icon {
+    right: 2.2rem;
+    display: none; /* comming to block later */
+}
+.filter_box {
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2rem;
+    position: relative;
+    float: right;
+    display: none;
+    margin-right: 1rem;
+}.filter_box * {margin: 0.5rem 0;}
+
+/* .filter select {display: inline-block;} */
+
+
+
+/* @ 410 */
+@media (min-width: 410px){
+    
+}
+
+/* @ 768 */
+@media (min-width: 768px){
+    
+}
+
+
+
+/* FOR PC */
+/* @ 990px */
+@media (min-width: 990px){
+    .property_search {
+        clear: both;
+        position: relative;
+        display: block;
+        height:2.9rem;
+        width: 100%;
+        margin: 0;
+    }
+    .property_search input {
+        font-size: 1.1rem;
+        position: absolute;
+        padding: 0.5rem 0.8rem;
+        height:100%;
+        width: 90%;
+        background-color: var(--transparent);
+        border-radius:  1rem;
+        margin: 0;
+        color: var(--black);
+        border-style:none;
+        z-index: 2;
+    }
+    .sr_instance {
+        z-index: 1;
+        position: absolute;
+        top: 3.15rem;
+        background-color: var(--white);
+        width: 100%;
+        height: fit-content;
+        min-height: 20rem;
+        display: none;
+        box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.664);
+        border-radius: 0.5rem;
+    }
+}
+
+/* @ 1200 */
+@media (min-width: 1200px){
+    
+}
+
+/* @ 1400 */
+@media (min-width: 1400px){
+    
+}
