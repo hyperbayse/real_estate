@@ -30,7 +30,7 @@
                         </span>
                 </span> 
             </p>
-            <p><a class="about" href="<?php $_SERVER['DOCUMENT_ROOT']?>/about/about.php">About Us</a></p>
+            <!-- <p><a class="about" href="<?php $_SERVER['DOCUMENT_ROOT']?>/about/about.php">About Us</a></p> -->
             <p><a class="contact" href="<?php $_SERVER['DOCUMENT_ROOT']?>/contact/contact.php">Contact</a></p>
         
             <span class="account">

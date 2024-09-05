@@ -1,4 +1,4 @@
-import {show_this} from "/docapp/stf/js/docFunctions.js";
+import {show_this} from "./docFunctions.js";
 
 const appointment = document.querySelector(".appointment");
 const message = document.querySelector(".message");

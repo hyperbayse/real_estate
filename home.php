@@ -153,7 +153,7 @@
         <div class="explore">
             <p>Let's get it done for you</p>
             <p>Asset Valuation | Property Management | Real Estate Brokerage ...</p>
-            <a href="services/services.php" target="_top"><p>Start exploring</p></a>
+            <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/services/services.php" target="_top"><p>Start exploring</p></a>
         </div>
 
 
@@ -199,7 +199,7 @@
             <p>About Us</p>
             <div class="we_doc">
                 <div class="image">
-                    <img src="stf/img/we_doc.jpg" alt="image">
+                    <img src="<?php $_SERVER['DOCUMENT_ROOT']?>/stf/img/we_doc.jpg" alt="image">
                 </div>
                 <div class="content">
                     <p>Our firm - Dapo Okeowo & Co. Estate Surveyors & Valuers is registered and
@@ -207,7 +207,7 @@
                     (ESVARBON) under the Decree No. 24 of 1975 to practice estate surveying and
                     valuation within the length and breadth of the Federal Republic of Nigeria as
                     evidenced by the attached Certificate of Compliance issued by the Registration
-                    Board. Our firm is equally approved and recognized to practice the profession <a href="about/about.php">Read more...</a>
+                    Board. Our firm is equally approved and recognized to practice the profession <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/about/about.php">Read more...</a>
                 </div>
             </div>
         </div>
