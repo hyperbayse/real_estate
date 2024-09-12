@@ -8,15 +8,21 @@
 <body>
 <?php include $_SERVER['DOCUMENT_ROOT']."/ext/head.php" ?>
 
+<?php include $_SERVER['DOCUMENT_ROOT']."/api/db_access.php" ?>
+
     <div id="login">
         <h5>Login your account</h5>
         <form method="post" action="">
             <div class="reference_pass">
-                <p>Email address: <input type="email"></p>
-                <p>Password: <input type="number"></p>
+                <p>
+                    <label for="email">Email address: <input type="email" name="email" id="email"></label>
+                </p>
+                <p>
+                    <label for="passw">Password: <input type="password" name="passw" id="passw"></label>
+                </p>
             </div>
             
-            <button name="submit">Login</button>
+            <button type="submit" name="submit">Login</button>
         </form>
         <p class="note">Forget password <a href="">Click here</a></p>
         <p class="note">You don't have an account <a href="sign_up.php">Sign up</a></p>

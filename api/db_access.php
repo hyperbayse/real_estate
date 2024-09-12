@@ -1,10 +1,12 @@
 <?php
     $server = "localhost:3306";
     $user = "root";
-    $password = "";
+    $password = "Engineer@102";
+    $db = "realestate";
 
-    $db_con = new mysqli($server, $user, $password);
-    if ($db_con->connect_error)
-    {
-        die("Connection failed: ".$db_con->connect_error);
+    try {
+        $db_con = new mysqli($server, $user, $password, $db);
+    }
+    catch (mysqli_sql_exception $e) {
+        echo "Connection failed, try again later";
     }
