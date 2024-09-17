@@ -44,12 +44,6 @@
             }
         }
     }
-
-     // Check if user already exists
-    //  $check_user = "SELECT email FROM users WHERE email = 'blasto@gmail.com'";
-    
-    //  $c_email = $db_con->query($check_user);
-    //  echo ($c_email->fetch_assoc())['email'];
 ?>
 
 
