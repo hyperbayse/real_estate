@@ -28,3 +28,9 @@ By leveraging technology, we can bring transparency and convenience to the real 
 
 # Progress
 More features and update coming soon
+
+# Author
+Sheriff Abdulfatai [text](https://github.com/hyperbayse)
+
+# License
+This project is licensed under the name Dapo Okeowo and Company and is not subject to copywriting under any circumstances.
