@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -9,7 +12,15 @@
         <script type="module" src="<?php $_SERVER['DOCUMENT_ROOT']?>/stf/js/home.js" defer></script>
     </head>
     <body>
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/ext/head.php';?>
+    <?php 
+        if (isset($_SESSION['email'])){
+            $email = $_SESSION['email'];
+            include $_SERVER['DOCUMENT_ROOT'].'/ext/auth_head.php';
+        }
+        else{
+            include $_SERVER['DOCUMENT_ROOT'].'/ext/head.php';
+        }
+    ?>
 
         <!-- Homepage image slide -->
         <div id="image_slides">
@@ -224,6 +235,6 @@
             </div>
         </div>
         
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/ext/base.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/ext/base.php';?>
     </body>
 </html>

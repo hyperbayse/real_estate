@@ -38,6 +38,8 @@
                 $c_email->free();
                 $check_user->close();
                 $user_register->close();
+
+                header("Location: /user/login.php");
             }
             else {
                 $existing_user = "User already exist";
